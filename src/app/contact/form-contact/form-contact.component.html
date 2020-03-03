@@ -1,0 +1,23 @@
+ <div class="container">
+
+  <form (ngSubmit) ="Save()">
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)] = "contact.name" placeholder="Your name" name="name" id="name" required="true">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" [(ngModel)] = "contact.email" placeholder="Example@example.com" name="phone" id="phone" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Phone</mat-label>
+      <input matInput [(ngModel)]= "contact.phone" type="phone" placeholder="809-000-0000" name="phone" id="phone" required>
+    </mat-form-field>
+
+    <button mat-raised-button type="submit" class="success">Guardar</button>
+
+  </form>
+ </div>

@@ -1,0 +1,23 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <span>{{vista}} </span>
+        
+
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span> <button mat-raised-button color="danger" (click)="restore()">Restore Application</button></span>
+        <span> <button mat-button color="danger" (click)="routeTo.routeTo(['/contacts']);">Home</button></span>
+        <span> <button mat-button color="info" type="submit" (click)="routeTo.routeTo(['/contact']);">
+          Add Contact
+        </button> </span>
+        
+
+      </mat-toolbar-row>
+    
+    
+    
+
+  </mat-toolbar>
+
+<router-outlet></router-outlet>

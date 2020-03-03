@@ -1,0 +1,22 @@
+
+<div *ngIf="contacts$" >  
+  
+  <mat-card *ngFor="let contact of contacts$">
+        Name: {{contact.name}}
+        <br>
+        Email: {{contact.email}}
+        <br>
+        PhoneNumber: {{contact.phone}} 
+        <mat-card-actions>
+            
+            <button mat-raised-button class="info"type="submit" (click)="router.navigate(['/contact',contact.id]);">
+                Edit
+              </button>
+
+              <button mat-raised-button class="danger" (click)="remove(contact.id)">
+                Delete
+              </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
